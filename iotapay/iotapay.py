@@ -9,7 +9,7 @@ tag = Tag('ACYCLICIOTAPAYLIOTA99999999') # Tag for in the message.
 class Iotapay:
     def __init__(self, provider, seed, address=None):
         self.seed = seed
-        self.provider = 'https://potato.iotasalad.org:14265'
+        self.provider = provider
         # self.api = Iota(self.provider)
         self.api = Iota(self.provider, self.seed)
 
@@ -42,3 +42,29 @@ class Iotapay:
                     'balance': str(pe.context['total_balance']),
                     'message': str(pe).split('(')[0]
                 }
+
+    def get_balance(self, data):
+        try:
+            if 'address' in data:
+                balance_result = self.api.get_balances([data['address']])
+                print('balance_result:', balance_result)
+                # {'balances': [0], 'milestone': None, 'duration': 1, 'milestoneIndex': 870196, 'references': ['NRZPIXFHBKGDEZCVEBHZQTJFDWKBPZSHZXEMCEOEDQYXOSYQKMXYYTHHUUJAKWX9YWNEIJPS9PFXZ9999']}
+                balance = balance_result['balances'][0]
+                # print('balance:', balance)
+                return {
+                        'status': 200,
+                        'balance': balance,
+                        'message': 'Successfully Retrieved!'
+                    }
+        except Exception as pe:
+            print('pe:', pe)
+            return {
+                    'status': 400,
+                    'error': '',
+                    # 'balance': str(pe.context['total_balance']),
+                    # 'message': str(pe).split('(')[0]
+                }
+
+    def collect(self, data):
+        print('send request to collect payment.')
+        return;
