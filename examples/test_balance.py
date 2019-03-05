@@ -1,4 +1,3 @@
-# Importing package
 from iotapay import Iotapay
 
 # Generate a random seed
@@ -13,11 +12,11 @@ iotapay = Iotapay(provider_url, seed)
 # Calling Pay function
 pay_request_data = {
         'json_data': {
-            'version': '0.1',
+            'version': '0.0.2',
         },
         'tag': 'ACYCLICIOTAPAYLIOTA99999999',
         'to_address': '',
-        'amount': 9
+        'amount': 1
     }
 
 # paid_result = iotapay.pay(pay_request_data)
@@ -27,7 +26,7 @@ pay_request_data = {
 # Case 1: Get balance for particular address.
 # get_balance_data = { 'address': '' }
 
-# Case 2: Get balance for n (currently 50) addresses connected to the seed.
+# Case 2: Get balance for x addresses connected to the seed.
 get_balance_data = {}
 
 # balance_result = iotapay.get_balance({})
