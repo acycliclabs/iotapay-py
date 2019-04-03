@@ -1,10 +1,6 @@
 from distutils.core import setup
 import os, re
 
-this_directory = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
-
 def get_version(package):
     """
     Return package version as listed in `__version__` in `init.py`.
@@ -36,7 +32,7 @@ setup(
     python_requires = ">=3.6",
     version = get_version('iotapay'),
     description = 'Pay using IOTA',
-    long_description = long_description,
+    long_description = open('README.md').read(),
     long_description_content_type = 'text/markdown',
     author = 'Kumar Anirudha',
     author_email = 'anirudhastark@yahoo.com',
