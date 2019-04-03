@@ -36,8 +36,8 @@ setup(
     python_requires = ">=3.6",
     version = get_version('iotapay'),
     description = 'Pay using IOTA',
-    long_description=long_description,
-    long_description_content_type='text/markdown'
+    long_description = long_description,
+    long_description_content_type = 'text/markdown',
     author = 'Kumar Anirudha',
     author_email = 'anirudhastark@yahoo.com',
     url = 'https://github.com/acycliclabs/iotapay-py',
