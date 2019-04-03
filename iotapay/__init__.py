@@ -1,6 +1,6 @@
 __author__ = 'anistark'
-__version__ = '0.0.6'
+__version__ = '0.0.7'
 __title__ = 'iotapay'
 
 # Importing Classes
-# from iotapay import iotapay
+# from iotapay import Iotapay

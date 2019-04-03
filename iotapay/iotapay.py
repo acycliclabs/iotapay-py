@@ -2,7 +2,7 @@
 from iota import Address, ProposedTransaction, Tag, Transaction, Iota, TryteString, json
 import time, json
 
-class iotapay:
+class Iotapay:
     def __init__(self, provider, seed, address=None):
         self.seed = seed
         self.provider = provider
