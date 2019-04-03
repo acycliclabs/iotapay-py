@@ -36,7 +36,11 @@ setup(
     author_email = 'anirudhastark@yahoo.com',
     url = 'https://github.com/acycliclabs/iotapay',
     keywords = ['iotapay','payment', 'anistark', 'python', 'acyclic', 'tangle'],
-    install_requires=[],
+    install_requires=[
+            'iota',
+            'json',
+            'time'
+        ],
     dependency_links=[],
     classifiers = [
         'Environment :: Web Environment',
