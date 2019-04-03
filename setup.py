@@ -29,19 +29,16 @@ def get_package_data(package):
 setup(
     name = 'iotapay',
     packages = ['iotapay'],
-    package_data=get_package_data('iotapay'),
+    package_data = get_package_data('iotapay'),
+    python_requires = ">=3.6",
     version = get_version('iotapay'),
     description = 'Pay using IOTA',
     author = 'Kumar Anirudha',
     author_email = 'anirudhastark@yahoo.com',
-    url = 'https://github.com/acycliclabs/iotapay',
+    url = 'https://github.com/acycliclabs/iotapay-py',
     keywords = ['iotapay','payment', 'anistark', 'python', 'acyclic', 'tangle'],
-    install_requires=[
-            'iota',
-            'json',
-            'time'
-        ],
-    dependency_links=[],
+    install_requires = ['PyOTA==2.0.5'],
+    dependency_links = [],
     classifiers = [
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
@@ -50,5 +47,7 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.5',
         'Topic :: Internet :: WWW/HTTP',
+        "Topic :: Utilities",
+        'Topic :: Software Development :: Libraries :: Python Modules',
     ]
 )

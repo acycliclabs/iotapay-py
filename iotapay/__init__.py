@@ -1,5 +1,5 @@
 __author__ = 'anistark'
-__version__ = '0.0.5'
+__version__ = '0.0.6'
 __title__ = 'iotapay'
 
 # Importing Classes
