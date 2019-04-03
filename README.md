@@ -1,30 +1,39 @@
 # IOTAPAY
 
-## Develpoment Stage (not recommended for immediate production use at this moment.)
-
 Python library to Pay using IOTA
 
 # Setup
 
-1. Install the library `pip install iotapay`
-2. Import in your code and start using functions.
+Install the library `pip install iotapay`
+
+Import package: `from iotapay.iotapay import Iotapay`
+
+Initialize: `Iotapay('https://url:14265', 'TWQH9ETUWNDTRHSQVNLOSFMSTQLHRTZQGDTFUHEKRNPVDRQGHQEARNLSXXCXGICCVWBQHOHWPYZSHJYTC')`
 
 ## Basic functions
 
-1. Pay in IOTA.
-2. Collect Payment / Request Money.
-3. Check Transaction Status.
+### Get Balance.
+`pay = Iotapay('https://url:14265', 'YOUR SEED')`
+
+Retrieve balance: `pay.get_balance({})`
 
 
-## Development
+### Pay
 
-### Setup
+```
+data = {
+        'json_data': {
+            'version': '0.0.9',
+        },
+        'tag': 'ACYCLICIOTAPAYLIOTA99999999',
+        'to_address': 'ADDRESS',
+        'amount': 10
+    }
+```
 
-1. Setup `virtualenv`/`venv` and activate it (`source venv/bin/activate`).
-2. Install dependencies: `pip install -r requirements/dev.txt`.
+Pay : `pay.pay(data)`
 
 
-### Run
+#### More Functions coming soon.
 
-1. `cd iotapay`
-2. Run tests to check if it's all setup and working. `python test.py`
+NOTE: Please, use proper iota node url, ADDRESS and your SEED to initialise. These are simple dummy values. NOT meant for production usage.
