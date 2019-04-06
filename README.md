@@ -1,5 +1,7 @@
 # IOTAPAY
 
+![PyPI](https://img.shields.io/pypi/v/iotapay.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/iotapay.svg) 
+
 Python library to Pay using IOTA
 
 # Setup
