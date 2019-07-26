@@ -5,6 +5,9 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/iotapay.svg)](https://www.python.org/downloads/) 
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/iotapay.svg)](https://pypi.org/project/iotapay/)
 
+[![Join Discord](https://img.shields.io/discord/417944032111493152?logo=discord&label=join%20discord")](https://discord.gg/vg92AZn)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/acycliclabs?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=acycliclabs)
+
 Python library to Pay using IOTA
 
 # Setup
