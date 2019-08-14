@@ -24,7 +24,7 @@ def get_package_data(package):
                               for filename in filenames])
     return {package: filepaths}
 
-with open("README.md", "r") as fh:
+with open("README.rst", "r") as fh:
     long_description = fh.read()
 
 setup(
@@ -35,7 +35,7 @@ setup(
     version = get_version('iotapay'),
     description = 'Pay using IOTA',
     long_description = long_description,
-    long_description_content_type = 'text/markdown',
+    # long_description_content_type = 'text/markdown',
     author = 'Kumar Anirudha',
     author_email = 'anirudhastark@yahoo.com',
     url = 'https://github.com/acycliclabs/iotapay-py',
