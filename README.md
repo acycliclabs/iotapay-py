@@ -1,6 +1,6 @@
 # [IOTAPAY](https://iotapay.dev/)
 
-![IOTAPay](https://i.imgur.com/XVMqjeA.png =200x200)
+<img src="https://i.imgur.com/XVMqjeA.png" width="200">
 
 [![PyPI](https://img.shields.io/pypi/v/iotapay.svg)](https://pypi.org/project/iotapay/) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
